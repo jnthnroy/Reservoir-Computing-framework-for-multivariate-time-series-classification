@@ -5,12 +5,12 @@ from sklearn.linear_model import Ridge
 from sklearn.metrics import accuracy_score, f1_score
 from sklearn.decomposition import PCA
 from sklearn.svm import SVC
-from tensorPCA import tensorPCA
 from scipy.spatial.distance import pdist, cdist, squareform
 
 # Custom imports
-from reservoir import Reservoir
-from MLP import make_MLPgraph, trainMLP, testMLP
+from .tensorPCA import tensorPCA
+from .reservoir import Reservoir
+from .MLP import make_MLPgraph, trainMLP, testMLP
 
 
 def compute_test_scores(pred_class, Yte):

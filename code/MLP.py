@@ -2,7 +2,8 @@ import tensorflow as tf
 import numpy as np
 import time
 from tensorflow.contrib.layers import maxout
-from kafnets import kaf
+# Custom imports
+from .kafnets import kaf
 
 
 def fc_layer(input_, in_dim, size, init, w_l2):
